@@ -1,0 +1,163 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.auth .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    box-shadow:  0 3px 30px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.form-container{
+  width: 50%;
+  padding: 2rem;
+}
+
+.image-container{
+  width: 50%;
+  background-color: var(--primary);
+  height: 70vh;
+
+}
+
+.auth .img-container {
+  animation: slide-down 0.5s ease;
+}
+
+@keyframes slide-down {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(100%);
+  }
+}
+
+.form-container {
+  animation: slide-up 0.5s ease;
+}
+
+@keyframes slide-up {
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+.auth .img-container img {
+  width: 50%;
+  height: 70vh;
+  margin: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.passwordInputDiv{
+  position: relative;
+}
+
+.showPassword {
+  position: absolute;
+  top: 55%;
+  right: 20px;
+  cursor: pointer;
+}
+
+form .register-header {
+  color: var(--primary);
+  text-align: center;
+}
+
+.auth form .btn {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.auth .form-container p {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.auth .form-container  p a {
+  color: var(--primary);
+}
+
+form input, select {
+  display: block;
+   font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+  margin: .6rem auto;
+   width: 100%;
+   border: 1px solid #c0bbbb;
+  border-radius: 24px 4px;
+  outline: none;
+  }
+
+  .phoneSection__content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   }
+
+   .code__number {
+    flex: .2;
+   }
+
+   .phone__number {
+    flex: 1;
+   }
+
+   form p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .reset__link {
+    font-weight: 500;
+    padding: 10px 0;
+  }
+
+  .hide-indicator {
+    display: none;
+  }
+
+  .show-indicator{
+    display: block;
+  animation: slide-up 0.5s ease;
+  }
+
+  .green {
+    color: var(--primary);
+  }
+
+  .red {
+    color: red;
+  }
+
+
+  @media screen and (max-width: 678px) {
+    .auth .container {
+      width: 90%;
+    }
+    .form-container{
+      width: 100%;
+    }
+  
+    .auth .img-container{
+      display: none;
+    }
+  }
+
+
